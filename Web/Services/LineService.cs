@@ -12,7 +12,33 @@ public class LineService : ILineService
     {
         var result = null as List<ISendMessage>;
 
+        /*
+        if (message.Contains("17"))
+        {
+            return  new List<ISendMessage>
+            {
+                new ImageMessage("https://megapx-assets.dcard.tw/images/3b3f8969-8fa8-421e-ad6a-349e0fd4f4b1/1280.jpeg"
+                    ,"https://megapx-assets.dcard.tw/images/3b3f8969-8fa8-421e-ad6a-349e0fd4f4b1/1280.jpeg",null),
+            };
+        }*/
+    
+        
         result = new List<ISendMessage>
+        Random rnd = new();
+        int Index= rnd.Next(0, 3);//0 1 2
+        string[] imgeUrl = new string[]
+        {
+            "https://megapx-assets.dcard.tw/images/3b3f8969-8fa8-421e-ad6a-349e0fd4f4b1/1280.jpeg"
+            "https://megapx-assets.dcard.tw/images/3b3f8969-8fa8-421e-ad6a-349e0fd4f4b1/1280.jpeg"
+            "https://megapx-assets.dcard.tw/images/3b3f8969-8fa8-421e-ad6a-349e0fd4f4b1/1280.jpeg"
+        };
+        
+        return  new List<ISendMessage>
+        {
+            new ImageMessage(imgeUrl[index]imgeUrl[index]
+                ,"https://megapx-assets.dcard.tw/images/3b3f8969-8fa8-421e-ad6a-349e0fd4f4b1/1280.jpeg",null),
+        };
+        
         
         
         {
