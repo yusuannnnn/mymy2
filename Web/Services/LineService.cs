@@ -29,8 +29,8 @@ public class LineService : ILineService
         string[] imgeUrl = new string[]
         {
             "https://megapx-assets.dcard.tw/images/3b3f8969-8fa8-421e-ad6a-349e0fd4f4b1/1280.jpeg"
-            "\thttps://megapx-assets.dcard.tw/images/e2c5d57a-27d7-4f11-ae89-32478358d871/1280.jpeg"
-            "\thttps://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSUV96CEv84MXgJMrUssdn_QmfkZVQK2_njg&usqp=CAU"
+            "https://images.luvkpop.com/uploads/2022/05/20220503181605100.jpg"
+            "https://images.luvkpop.com/uploads/2022/05/2022050318163545.jpg\"
         };
         
         result  new List<ISendMessage>
