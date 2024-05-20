@@ -17,15 +17,13 @@ public class LineService : ILineService
         {
             return  new List<ISendMessage>
             {
-                new ImageMessage("https://megapx-assets.dcard.tw/images/3b3f8969-8fa8-421e-ad6a-349e0fd4f4b1/1280.jpeg"
-                    ,"https://megapx-assets.dcard.tw/images/3b3f8969-8fa8-421e-ad6a-349e0fd4f4b1/1280.jpeg",null),
+                new ImageMessage("https://megapx-assets.dcard.tw/images/3b3f8969-8fa8-421e-ad6a-349e0fd4f4b1/1280.jpeg","https://megapx-assets.dcard.tw/images/3b3f8969-8fa8-421e-ad6a-349e0fd4f4b1/1280.jpeg",null),
             };
         }*/
     
         
-        result = new List<ISendMessage>
         Random rnd = new();
-        int Index= rnd.Next(0, 3);//0 1 2
+        int Index= rnd.Next(0, 3);//012
         string[] imgeUrl = new string[]
         {
             "https://megapx-assets.dcard.tw/images/3b3f8969-8fa8-421e-ad6a-349e0fd4f4b1/1280.jpeg"
@@ -38,7 +36,7 @@ public class LineService : ILineService
         
         result = new List<ISendMessage>
         {
-            new ImageMessage(imgeUrl[Index],imgeUrl[Index]null),
+            new ImageMessage(imgeUrl[Index],imgeUrl[Index]),
            
             new TextMessage($"Receive a text event message \nchannelId={channelId}  \nuserId={userId}")
         };
