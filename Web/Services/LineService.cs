@@ -33,16 +33,17 @@ public class LineService : ILineService
             "https://images.luvkpop.com/uploads/2022/05/2022050318163545.jpg\"
         };
         
-        result  new List<ISendMessage>
+        
+        
+        
+        result = new List<ISendMessage>
         {
-                new ImageMessage(imgeUrl[Index]"https://megapx-assets.dcard.tw/images/3b3f8969-8fa8-421e-ad6a-349e0fd4f4b1/1280.jpeg",null),
-                
-                
-                new TextMessage($"Receive a text event message \nchannelId={channelId}  \nuserId={userId}")
+            new ImageMessage(imgeUrl[Index],imgeUrl[Index]null),
+           
+            new TextMessage($"Receive a text event message \nchannelId={channelId}  \nuserId={userId}")
         };
         return result;
     }
-
 
     public async Task<List<ISendMessage>> ProcessStickerEventMessageAsync(string channelId, string userId,string packageId, string stickerId)
     {
@@ -111,3 +112,4 @@ public class LineService : ILineService
         return result;
     }
 }
+
