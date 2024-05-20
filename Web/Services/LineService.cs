@@ -13,7 +13,7 @@ public class LineService : ILineService
         var result = null as List<ISendMessage>;
 
         /*
-        if (message.Contains("seventeen"))
+        if (message.Contains("次人"))
         {
             return  new List<ISendMessage>
             {
